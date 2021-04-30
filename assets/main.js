@@ -27,6 +27,21 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
+var gameChoice = prompt("Scegli tra 'Pari' e 'Dispari'").toUpperCase;
+var numberChoice = parseInt(prompt("Scegli un numero da 1 e 5 compresi"));
+
+function pcGetRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var sum = numberChoice + pcGetRndInteger(1, 5);
+console.log(sum);
+document.write("Il numero è = "+sum+"<br>");
+document.write("Il tuo numero è " + )
+
+function isEven(sum) {
+    return (sum%2 == 0);
+}
 
 
 
